@@ -1,41 +1,41 @@
-# DEMO 02 — Có Skill vs Không Skill (5–7 phút)
+# DEMO 02 — Trắng đơn giản vs Skill màu xanh 4S (5–7 phút)
 
-## Cần chuẩn bị
-- Mở Codex Web trong repository `phephanhoang/4s-demo`, branch `main`.
-- Mở `demos/skill-4s-slide/noi-dung.md` cho học viên xem: **cùng 3 slide và cùng 6 màu**.
-- Có thể mở trang `/slide-demo/` của website đã deploy để xem **hai bản preview dự phòng cạnh nhau**.
-- Khi chạy demo thật, dùng 2 lượt **riêng biệt**, nên dùng 2 task Codex mới để giảm ảnh hưởng ngữ cảnh.
+## Chuẩn bị
+- Mở Codex Web, repository `phephanhoang/4s-demo`, branch `main` mới nhất.
+- Mở file `demos/skill-4s-slide/noi-dung.md`. Chỉ có **nội dung**, không chứa bất kỳ bảng màu nào.
+- Mở sẵn `demos/skill-4s-slide/index.html` hoặc route website `/slide-demo/` (chỉ dùng sau khi xác minh website đã deploy).
+- Nên dùng **hai task Codex mới** để tránh lẫn ngữ cảnh. Chạy A xong rồi B.
 
-## PHẦN A — Không dùng Skill (2 phút)
+## LƯỢT A — Không dùng Skill (2 phút)
 
-Dán nguyên câu lệnh:
+Dán nguyên văn:
 
-> Đọc demos/skill-4s-slide/noi-dung.md và tạo một deck đúng 3 slide HTML 16:9 tại demos/skill-4s-slide/no-skill/index.html. Dùng chính xác 6 màu trong file. Hãy làm tốt nhất bằng khả năng thông thường của bạn, nhưng KHÔNG dùng hay đọc bất kỳ Skill thiết kế nào (kể cả guizang-ppt-skill và skill-4s-slide). Không lấy hay copy code từ các bản preview có sẵn; tạo lại. Không sửa file nào khác.
+> Từ file `demos/skill-4s-slide/noi-dung.md`, tạo đúng 3 slide HTML 16:9 tại `demos/skill-4s-slide/no-skill/index.html`. Đây là bản mặc định dành cho người mới: **nền trắng, chữ đen, font Arial, trình bày cực kỳ đơn giản**, không trang trí, không dùng design system. KHÔNG đọc hay áp dụng bất kỳ Skill nào (kể cả Guizang và skill-4s-slide). Tạo mới từ brief, không sao chép bản preview có sẵn. Không sửa file khác.
 
-Mở kết quả. Nêu: “AI vẫn tạo được slide khi không có skill.”
+Nêu rõ: “Đây là bản nền trắng đơn giản được yêu cầu trực tiếp, không có Skill thiết kế.”
 
-## PHẦN B — Có Skill (2 phút)
+## LƯỢT B — Sử dụng Skill-4S-Slide (2 phút)
 
-Ở **task Codex mới**, dán:
+Trong **task Codex mới**, dán:
 
-> Đọc demos/skill-4s-slide/noi-dung.md và tạo một deck đúng 3 slide HTML 16:9 tại demos/skill-4s-slide/with-skill/index.html. Dùng chính xác 6 màu trong file. Hãy làm tốt nhất bằng khả năng thông thường của bạn, đồng thời áp dụng $skill-4s-slide và đầy đủ quy trình 4S trong SKILL.md. KHÔNG dùng guizang-ppt-skill. Không lấy hay copy code từ các bản preview có sẵn; tạo lại. Không sửa file nào khác.
+> Từ file `demos/skill-4s-slide/noi-dung.md`, tạo đúng 3 slide HTML 16:9 tại `demos/skill-4s-slide/with-skill/index.html`. Áp dụng `$skill-4s-slide` và toàn bộ quy tắc thiết kế / 4S trong `.agents/skills/skill-4s-slide/SKILL.md`. Không dùng Guizang, không sao chép bản preview có sẵn. Không sửa file khác.
 
-Mở kết quả. Nêu: “Cùng nội dung, cùng bảng màu, nhưng AI có thêm nguyên tắc về bố cục và chất lượng.”
+Nêu: “Bảng màu và phong cách **không nằm trong brief chung**, mà trong bộ hướng dẫn Skill có thể dùng lại.”
 
-## PHẦN C — Đối chiếu (1–3 phút)
+## SO SÁNH (1–3 phút)
 
-Mở `demos/skill-4s-slide/index.html` hoặc website `/slide-demo/` để xem hai preview dự phòng cạnh nhau. Dùng nút Tiếp để đổi 3 slide đồng bộ.
+Mở `demos/skill-4s-slide/index.html` hoặc route `/slide-demo/` sau khi build/deploy. Hai bên chuyển đồng bộ qua nút mũi tên.
 
-Hỏi học viên quan sát:
-1. **Trọng tâm:** bản nào dẫn mắt đến ý quan trọng nhanh hơn?
-2. **Nhịp trình bày:** bản nào đổi bố cục hợp lý theo từng ý?
-3. **Nhất quán:** màu, font, khoảng cách ở các slide có thống nhất không?
-4. **Chất lượng nội dung:** hai bản có giữ đúng thông tin nguồn không?
+Cho học viên nhìn 4 điểm: (1) hệ màu, (2) typography, (3) nhịp bố cục, (4) cách dẫn mắt và độ nhất quán.
 
-**Thông điệp chốt:** Skill không phải phép màu và không bảo đảm lúc nào cũng đẹp hơn. Nó là bộ hướng dẫn có thể lặp lại, giúp chất lượng ổn định và giảm công sức viết prompt/kiểm tra.
+**Thông điệp chốt:** “Cùng một nội dung, chỉ cần gọi một Skill đã được chuẩn hóa thiết kế, AI có thể tái sử dụng cùng tiêu chuẩn mà không phải viết lại yêu cầu dài.”
 
-### Fallback khi Codex không nhận `$skill-4s-slide`
-> Đọc và làm đúng .agents/skills/skill-4s-slide/SKILL.md để tạo 3 slide từ demos/skill-4s-slide/noi-dung.md, lưu demos/skill-4s-slide/with-skill/index.html. Không sửa file khác.
+**Lưu ý trung thực:** bản trắng **được chủ động đặt yêu cầu đơn giản** để dạy sự khác biệt giữa đầu ra cơ bản và đầu ra theo design system; không dùng nó để tuyên bố Codex không có Skill sẽ luôn thiết kế xấu.
 
-### Lưu ý trung thực khi demo
-Các trang so sánh được dựng sẵn nhằm đảm bảo có cái để trình chiếu khi Internet hoặc Codex Web chậm. Chúng là minh họa của hai **cách làm**, không phải dữ liệu khảo sát hay benchmark khách quan về Codex.
+## Khi Skill không được nhận diện
+> Đọc `.agents/skills/skill-4s-slide/SKILL.md` rồi tạo 3 slide từ `demos/skill-4s-slide/noi-dung.md`, lưu `demos/skill-4s-slide/with-skill/index.html`. Không sửa file khác.
+
+## Cần nhớ
+- `$skill-4s` = Skill **xử lý ghi chú họp**.
+- `$skill-4s-slide` = Skill **thiết kế slide theo 5 màu xanh–lime chuyên nghiệp**.
+- `demos/skill-4s-slide/index.html` = **bản minh họa dự phòng** cạnh nhau, không phải kết quả benchmark của lần chạy live.
