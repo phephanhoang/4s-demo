@@ -42,3 +42,14 @@ Ready-to-run example:
 > Use `$skill-4s` to process `demos/skill-4s/ghi-chu-hop.md` and save the result to `demos/skill-4s/ket-qua.md`. Do not modify other files.
 
 Workshop presenter guide: [`demos/skill-4s/HUONG-DAN-DEMO.md`](demos/skill-4s/HUONG-DAN-DEMO.md).
+
+
+## Skill-4S-Slide — Workshop A/B comparison
+
+For the workshop's slide demonstration, read the common brief at [`demos/skill-4s-slide/noi-dung.md`](demos/skill-4s-slide/noi-dung.md). It fixes the **same content and same six-color palette for both variants**.
+
+- **NO SKILL variant:** if the user explicitly asks for `no-skill`/"không dùng skill" in this demo, DO NOT invoke `$guizang-ppt-skill`, `$skill-4s-slide`, or any other presentation skill. Use the brief and ordinary Codex capability to create `demos/skill-4s-slide/no-skill/index.html`. Do not clone the prebuilt example; regenerate from source.
+- **WITH SKILL variant:** if the user asks for `$skill-4s-slide`, read [`.agents/skills/skill-4s-slide/SKILL.md`](.agents/skills/skill-4s-slide/SKILL.md) and apply its 4S art-direction workflow to the same brief, then create `demos/skill-4s-slide/with-skill/index.html`. Do not invoke Guizang unless the user explicitly requests it.
+- These two narrow workshop modes override the generic Guizang recommendation above only for this A/B demonstration.
+- Both variants must preserve all source facts and use the exact palette. Do not deliberately degrade the no-skill version. Do not copy from existing preview HTML when instructed to regenerate.
+- The prebuilt side-by-side comparison lives at `demos/skill-4s-slide/index.html` (deployed route: `/slide-demo/`). The teaching script is `demos/skill-4s-slide/HUONG-DAN-DEMO.md`.
