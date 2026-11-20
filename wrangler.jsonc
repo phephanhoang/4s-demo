@@ -1,6 +1,9 @@
 {
   "name": "4s-demo",
   "compatibility_date": "2026-11-20",
+  "build": {
+    "command": "npm run build"
+  },
   "assets": {
     "directory": "./dist",
     "html_handling": "force-trailing-slash"
