@@ -16,3 +16,12 @@ for (const deck of decks) {
 }
 
 await writeFile(new URL('_redirects', dist), '/ /4s/ 302\n');
+
+
+// Workshop Demo 02: optional side-by-side slide skill comparison.
+const slideDemo = new URL('../demos/skill-4s-slide/', import.meta.url);
+for (const name of ['index.html', 'no-skill/index.html', 'with-skill/index.html']) {
+  const destination = new URL(`slide-demo/${name}`, dist);
+  await mkdir(new URL('.', destination), { recursive: true });
+  await copyFile(new URL(name, slideDemo), destination);
+}
