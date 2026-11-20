@@ -1,61 +1,15 @@
-<!doctype html><html lang="vi"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>AI FOR WORK 02 — Không Skill</title><style>
-:root{--orange:#FF5B04;--green:#075056;--gunmetal:#233038;--ivory:#FDF6E3;--sand:#F4D47C;--silver:#D3DDDD}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{font-family:Arial,Helvetica,sans-serif}
-.deck{position:relative;width:100vw;height:100vh;overflow:hidden}.slide{position:absolute;inset:0;display:none;overflow:hidden}.slide.visible{display:block}
-.controls{position:fixed;z-index:20;bottom:13px;right:18px;display:flex;align-items:center;gap:8px}
-.controls button{background:rgba(255,255,255,.91);color:#233038;border:1px solid rgba(0,0,0,.18);width:34px;height:30px;border-radius:4px;font-size:19px;cursor:pointer}.controls span{padding:6px 9px;background:rgba(255,255,255,.85);color:#233038;font:11px Arial;letter-spacing:.13em;border-radius:3px}
-@media (max-width:650px){.controls{bottom:6px;right:6px;transform:scale(.7);transform-origin:bottom right}}
+<!doctype html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI FOR WORK 02 — Bản trắng cơ bản</title><style>*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:#121b1d}.stage{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(100vw,177.7778vh);height:min(100vh,56.25vw);container-type:inline-size;overflow:hidden}.slide{position:absolute;inset:0;display:none;overflow:hidden}.slide.visible{display:block}
+.toolbar{position:absolute;bottom:1.8%;right:2%;display:flex;align-items:center;gap:7px;z-index:80}.toolbar button{border:1px solid #acb3b0;background:#fff;color:#1C1C1C;padding:4px 11px;cursor:pointer;font-size:13px;line-height:1.25}.toolbar span{font:12px/1.2 Arial;color:#1C1C1C;background:#fff;padding:5px 11px}
+@media print{.stage{width:100vw;height:56.25vw;top:0;left:0;transform:none}.toolbar{display:none}}
 
-.basic{background:#FDF6E3;color:#233038;padding:6% 7.5%;border-top:12px solid #075056}
-.basic .kicker{color:#075056;font-size:clamp(12px,1.32vw,18px);font-weight:700;letter-spacing:.10em}
-.basic h1{max-width:970px;font:bold clamp(30px,4.1vw,62px) Arial,sans-serif;margin:6% 0 3%;line-height:1.1}
-.basic .orange-rule{height:9px;background:#FF5B04;width:142px}
-.basic h2{font-size:clamp(24px,3vw,42px);margin:4% 0 2%}
-.basic .lead{font-size:clamp(16px,1.76vw,25px);line-height:1.5;max-width:780px}
-.basic-footer{position:absolute;left:7.5%;right:7.5%;bottom:4%;border-top:1px solid #D3DDDD;padding-top:13px;display:flex;justify-content:space-between;color:#075056;font-size:clamp(11px,1vw,16px);font-weight:bold}
-.basic-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2%;margin-top:4.5%}
-.basic-card{background:#D3DDDD;padding:24px 22px;min-height:210px;border-left:5px solid #FF5B04}
-.basic-card strong{font-size:17px;color:#075056}
-.basic-card h2{font-size:clamp(20px,2.3vw,33px);margin:18px 0 12px}
-.basic-card p{font-size:clamp(13px,1.54vw,21px);line-height:1.44}
-.basic-punchline{font-size:clamp(16px,1.78vw,26px);margin-top:3.4%;color:#075056;font-weight:700}
-.basic-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2%;margin-top:5%}
-.basic-steps article{padding:24px;border:2px solid #D3DDDD;min-height:218px}.basic-steps h2{font-size:clamp(20px,2.3vw,32px);margin:0 0 25px}.basic-steps p{font-size:clamp(14px,1.7vw,24px);line-height:1.38}
-</style></head><body><main class="deck">
-<section class="slide basic visible" aria-label="Slide 1">
-  <div class="kicker">AI FOR WORK 02 / DEMO SLIDE</div>
-  <h1>AI KHÔNG CHỈ LÀ MỘT Ô CHAT</h1>
-  <div class="orange-rule"></div>
-  <h2>Từ Prompt đến Skill</h2>
-  <p class="lead">Người dùng tiến từ việc hỏi AI một lần sang thiết lập cách AI làm việc nhất quán.</p>
-  <div class="basic-footer">AI FOR WORK 02 <span>01 / 03</span></div>
-</section>
-<section class="slide basic" aria-label="Slide 2">
-  <div class="kicker">BA TẦNG LÀM VIỆC</div>
-  <h1>BA TẦNG LÀM VIỆC CÙNG AI</h1>
-  <div class="basic-cols">
-    <article class="basic-card"><strong>01</strong><h2>Prompt</h2><p>Một yêu cầu cho một nhiệm vụ cụ thể.</p></article>
-<article class="basic-card"><strong>02</strong><h2>Instructions</h2><p>Quy tắc và định hướng AI cần tuân theo.</p></article>
-<article class="basic-card"><strong>03</strong><h2>Skill</h2><p>Quy trình chuyên biệt có thể sử dụng nhiều lần.</p></article>
-  </div>
-  <div class="basic-punchline">Không phải prompt dài hơn. Là tổ chức công việc rõ hơn.</div>
-  <div class="basic-footer">AI FOR WORK 02 <span>02 / 03</span></div>
-</section>
-<section class="slide basic" aria-label="Slide 3">
-  <div class="kicker">VÍ DỤ THỰC TẾ</div>
-  <h1>MỘT VÍ DỤ RẤT ĐỜI THƯỜNG</h1>
-  <div class="basic-steps">
-    <article><h2>Đầu vào</h2><p>Ghi chú họp lộn xộn.</p></article>
-    <article><h2>Quy trình</h2><p>Sàng lọc → Sắp xếp → Soạn → Soát.</p></article>
-    <article><h2>Kết quả</h2><p>Tóm tắt họp, bảng phân công, email nháp.</p></article>
-  </div>
-  <p class="basic-punchline">Không tự bịa người phụ trách hay thời hạn chưa xác nhận.</p>
-  <div class="basic-footer">AI FOR WORK 02 <span>03 / 03</span></div>
-</section></main><div class="controls"><button id="prev" aria-label="Trang trước">‹</button><span id="pager">1 / 3</span><button id="next" aria-label="Trang tiếp">›</button></div><script>
-const slides=Array.from(document.querySelectorAll('.slide'));let current=0;
-function setSlide(n){current=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('visible',i===current));document.getElementById('pager').textContent=(current+1)+' / '+slides.length;}
-document.getElementById('prev').onclick=()=>setSlide(current-1);document.getElementById('next').onclick=()=>setSlide(current+1);
-window.addEventListener('message',event=>{if(event.data&&event.data.type==='deck-go')setSlide(Number(event.data.index)||0);});
-document.addEventListener('keydown',event=>{if(['ArrowRight','PageDown'].includes(event.key)){event.preventDefault();setSlide(current+1);parent.postMessage({type:'deck-step',delta:1},'*');}else if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();setSlide(current-1);parent.postMessage({type:'deck-step',delta:-1},'*');}});
-setSlide(0);
-</script></body></html>
+body{font-family:Arial,Helvetica,sans-serif;background:white}.stage{background:white}.slide{background:#fff;color:#111;padding:7% 8%}
+.slide h1{font:bold 4.35cqw/1.16 Arial,sans-serif;margin:0 0 4.5%;max-width:87%}.slide h2{font:700 2.4cqw/1.3 Arial,sans-serif;margin:0 0 3%}
+.slide p,.slide li{font:1.72cqw/1.62 Arial,sans-serif;margin:0 0 1.7%;max-width:92%}
+.slide ul{margin:1.5% 0;padding-left:3.5%}
+.slide .foot{position:absolute;left:8%;bottom:8%;color:#333;font:1.0cqw Arial,sans-serif}
+.slide hr{border:0;border-top:1px solid #ccc;margin:0 0 4%}
+</style></head><body><main class="stage">
+<section class="slide visible" aria-label="Slide 1"><h1>AI KHÔNG CHỈ LÀ MỘT Ô CHAT</h1><hr><h2>Từ Prompt đến Skill</h2><p>Người dùng tiến từ việc hỏi AI một lần sang thiết lập cách AI làm việc nhất quán.</p><div class="foot">AI FOR WORK 02 — SLIDE 1</div></section>
+<section class="slide" aria-label="Slide 2"><h1>BA TẦNG LÀM VIỆC CÙNG AI</h1><hr><ul><li><strong>Prompt:</strong> Một yêu cầu cho một nhiệm vụ cụ thể.</li><li><strong>Instructions:</strong> Quy tắc và định hướng AI cần tuân theo.</li><li><strong>Skill:</strong> Quy trình chuyên biệt có thể sử dụng nhiều lần.</li></ul><p><strong>Kết luận:</strong> Không phải viết một prompt dài hơn, mà là tổ chức công việc rõ hơn.</p><div class="foot">AI FOR WORK 02 — SLIDE 2</div></section>
+<section class="slide" aria-label="Slide 3"><h1>MỘT VÍ DỤ RẤT ĐỜI THƯỜNG</h1><hr><p><strong>Đầu vào:</strong> Ghi chú họp lộn xộn.</p><p><strong>Quy trình:</strong> Sàng lọc → Sắp xếp → Soạn → Soát.</p><p><strong>Kết quả:</strong> Tóm tắt họp, bảng phân công, email nháp.</p><p><strong>Nguyên tắc:</strong> Không tự bịa người phụ trách hay thời hạn chưa được xác nhận.</p><div class="foot">AI FOR WORK 02 — SLIDE 3</div></section>
+<div class="toolbar"><button id="prev" aria-label="Trang trước">‹</button><span id="pager">01 / 03</span><button id="next" aria-label="Trang tiếp">›</button></div></main><script>(function(){const slides=[...document.querySelectorAll('.slide')];let active=0;function show(n){active=Math.max(0,Math.min(slides.length-1,Number(n)||0));slides.forEach((el,i)=>el.classList.toggle('visible',active===i));document.getElementById('pager').textContent=String(active+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0')}document.getElementById('prev').onclick=()=>show(active-1);document.getElementById('next').onclick=()=>show(active+1);window.addEventListener('message',event=>{if(event.data?.type==='deck-go')show(event.data.index)});document.addEventListener('keydown',event=>{if(['ArrowRight','PageDown'].includes(event.key)){event.preventDefault();show(active+1);if(window.parent!==window)parent.postMessage({type:'deck-step',delta:1},'*')}if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();show(active-1);if(window.parent!==window)parent.postMessage({type:'deck-step',delta:-1},'*')}});show(0)})();</script></body></html>
