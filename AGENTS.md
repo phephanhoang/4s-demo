@@ -28,3 +28,17 @@ node .agents/skills/guizang-ppt-skill/scripts/validate-swiss-deck.mjs path/to/in
 ```
 
 Check the validator output for skipped measurements. The editorial seed is empty. The Swiss seed includes placeholder cover and closing slides. Replace the placeholder content and keep slide IDs, registered layout IDs, and presenter notes in sync. Review the finished deck in-browser. Live audience-window and projector checks require an interactive browser and the presentation hardware.
+
+
+## Skill-4S — No-code workshop demo
+
+For requests to clean up Vietnamese meeting or work notes, apply `$skill-4s`.
+The skill lives at [`.agents/skills/skill-4s/SKILL.md`](.agents/skills/skill-4s/SKILL.md).
+If automatic skill discovery is unavailable, explicitly read that file and follow the 4S steps: **Sàng lọc → Sắp xếp → Soạn → Soát**.
+It requires no APIs, scripts or external services. Never send the draft email or invent missing information.
+
+Ready-to-run example:
+
+> Use `$skill-4s` to process `demos/skill-4s/ghi-chu-hop.md` and save the result to `demos/skill-4s/ket-qua.md`. Do not modify other files.
+
+Workshop presenter guide: [`demos/skill-4s/HUONG-DAN-DEMO.md`](demos/skill-4s/HUONG-DAN-DEMO.md).
