@@ -44,12 +44,13 @@ Ready-to-run example:
 Workshop presenter guide: [`demos/skill-4s/HUONG-DAN-DEMO.md`](demos/skill-4s/HUONG-DAN-DEMO.md).
 
 
-## Skill-4S-Slide — Workshop A/B comparison
+## Skill-4S-Slide — Workshop: plain white vs designed green
 
-For the workshop's slide demonstration, read the common brief at [`demos/skill-4s-slide/noi-dung.md`](demos/skill-4s-slide/noi-dung.md). It fixes the **same content and same six-color palette for both variants**.
+This is a **deliberate educational comparison of two treatments of the same content**, not a benchmark of model capability.
 
-- **NO SKILL variant:** if the user explicitly asks for `no-skill`/"không dùng skill" in this demo, DO NOT invoke `$guizang-ppt-skill`, `$skill-4s-slide`, or any other presentation skill. Use the brief and ordinary Codex capability to create `demos/skill-4s-slide/no-skill/index.html`. Do not clone the prebuilt example; regenerate from source.
-- **WITH SKILL variant:** if the user asks for `$skill-4s-slide`, read [`.agents/skills/skill-4s-slide/SKILL.md`](.agents/skills/skill-4s-slide/SKILL.md) and apply its 4S art-direction workflow to the same brief, then create `demos/skill-4s-slide/with-skill/index.html`. Do not invoke Guizang unless the user explicitly requests it.
-- These two narrow workshop modes override the generic Guizang recommendation above only for this A/B demonstration.
-- Both variants must preserve all source facts and use the exact palette. Do not deliberately degrade the no-skill version. Do not copy from existing preview HTML when instructed to regenerate.
-- The prebuilt side-by-side comparison lives at `demos/skill-4s-slide/index.html` (deployed route: `/slide-demo/`). The teaching script is `demos/skill-4s-slide/HUONG-DAN-DEMO.md`.
+- Shared content source: [`demos/skill-4s-slide/noi-dung.md`](demos/skill-4s-slide/noi-dung.md). **It does not define any palette or visual system.**
+- **NO SKILL** request: create a plain **white background, black Arial text**, very basic 16:9 HTML slide deck at `demos/skill-4s-slide/no-skill/index.html`. Do NOT invoke or read any design skill, including Guizang. This explicit educational request overrides the general Guizang recommendation above.
+- **WITH SKILL** request: read and follow [`.agents/skills/skill-4s-slide/SKILL.md`](.agents/skills/skill-4s-slide/SKILL.md). This is the ONLY source of its five-color Renewal Green / Graphite Teal style and art direction. Generate `demos/skill-4s-slide/with-skill/index.html`. Do not invoke Guizang for this A/B demo.
+- Regenerate output in a new Codex task, from the source brief and the applicable instructions; do not copy from existing illustrative previews.
+- All three slides retain identical semantic content. Prebuilt preview pages are a **workshop fallback**, not experimental results. The static comparison is `demos/skill-4s-slide/index.html`, published at `/slide-demo/` after deployment.
+- Presenter guide: `demos/skill-4s-slide/HUONG-DAN-DEMO.md`. Avoid editing unrelated projects.
